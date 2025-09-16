@@ -1,238 +1,259 @@
 html {
-    box-sizing: border-box;
-  }
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 1.5rem;
+  letter-spacing: 0.08em;
+}
+
+p,
+input,
+textarea,
+label,
+button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  max-width: 450px;
+}
+
+ul {
+  padding: 0 1.5rem;
+  list-style: none;
+}
+
+.hero__container {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 10rem;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.hero__leftContainer {
+}
+
+.hero__rightContainer {
+}
+
+.hero__title {
+  font-family: "New Amsterdam", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 5rem;
+
+  line-height: 1rem;
+  letter-spacing: 0.1em;
+
+  margin: 0;
+  padding: 0;
+}
+
+.title__description {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  font-size: 2rem;
+
+  line-height: 2rem;
+  letter-spacing: 0.035em;
   
-  body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-  }
+}
+
+.bold {
+  font-weight: bolder;
+    filter: 
+    drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.2)) 
+}
+
+.text-xl {
+  font-size: 4rem;
   
-  a {
-    text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 1.5rem;
-    letter-spacing: 0.08em;
+}
+
+.hero__image {
+  border-radius: 0.8rem;
+  width: 100%;
+  max-width: 600px;
+}
+
+.hero__button {
+  display: inline-block;
+  padding: 1.25rem 3rem;
+  background: #01b9ff;
+  color: #ffffff;
+  border-radius: 0.4rem;
+  margin-top: 2rem;
+}
+
+.hero__button:hover {
+  background: #64d4ff;
+  scale: 1.01;
+  transition-timing-function: ease;
+  transition: 0.15s;
+}
+
+.hero__button:active {
+  background: #0090c7;
+  transition-timing-function: ease;
+  transition: 0.1s;
+  inset: 1rem;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  margin: 3rem 0;
+}
+
+.list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.list li {
+  /* padding: 0 1rem; */
+  border-radius: 1rem;
+  box-shadow: 4px 4px 10px 0 rgba(0, 0, 0, 0.25);
+  padding: 1.5rem;
+}
+
+.contact__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact {
+  padding: 0 1.5rem;
+  margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem;
+  width: 100%;
+}
+
+.contact__cont {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+textarea,
+button {
+  padding: 1rem;
+  border-radius: 0.4rem;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 1.8rem;
+  letter-spacing: 0.06em;
+  max-width: 450px;
+
+  margin-left: 1.5rem;
+  color: #01b9ff;
+}
+
+/* Tablets in portrait mode */
+@media screen and (max-width: 767px) {
+  html {
+    font-size: 16px;
   }
 
-  p, input, textarea, label, button {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 1.2rem;
-    letter-spacing: 0.06em;
-    max-width: 450px;
-  }
-
-  ul {
-    padding: 0 1.5rem;
-    list-style: none;
-  }
-  
   .hero__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    margin-top: 10rem;
-    width: 100%;
-    max-width: 1440px;
+    margin-top: 0;
+    flex-direction: column-reverse;
   }
-  
   .hero__leftContainer {
-  
+    padding: 0 2rem;
+    width: 100%;
   }
-  
+
   .hero__rightContainer {
-  
+    width: 100%;
   }
-  
-  .hero__title {
-    font-family: "New Amsterdam", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  
-    font-size: 5rem;
-  
-    line-height: 4rem;
-    letter-spacing: 0.1em;
-  
-    margin: 0;
-    padding: 0;
-  }
-  
-  .hero__description {
-    font-family: "Barlow Condensed", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-  
-    font-size: 2rem;
-  
-    line-height: 2rem;
-    letter-spacing: 0.035em;
-  }
-  
+
   .hero__image {
-    border-radius: 0.8rem;
-    width: 100%;
-    max-width: 600px;
-  }
-  
-  .hero__button {
-    display: inline-block;
-    padding: 1.25rem 3rem;
-    background: #01B9FF;
-    color: #FFFFFF;
-    border-radius: 0.4rem;
-    margin-top: 2rem;
-  }
-  
-  .hero__button:hover {
-    background: #64d4ff;
-    scale: 1.01;
-    transition-timing-function: ease;
-    transition: 0.15s;
-  }
-  
-  .hero__button:active {
-    background: #0090c7;
-    transition-timing-function: ease;
-    transition: 0.1s;
-    inset: 1rem;
-  }
-  
-  
-  .roboto-regular {
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+    border-radius: 0;
+    max-width: none;
   }
 
+}
 
-  .list {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: center;
-    align-items: center; */
+/* Tablets in landscape mode or small laptops */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .hero__container {
+    flex-direction: column-reverse;
+  }
+}
 
-    width: 100%;
-    margin: 3rem 0;
+/* Small desktops */
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .hero__container {
+    flex-direction: column-reverse;
   }
+}
 
-  .list ul {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+/* Large screens, laptops, and desktops */
+@media (min-width: 1281px) {
+  body {
+    font-size: 24px;
   }
+  /* Styles for larger screens */
+}
 
-  .list li {
-    /* padding: 0 1rem; */
+/* For very high resolution screens */
+@media (min-width: 1920px) {
+  body {
+    font-size: 26px;
   }
+  /* Styles for very large screens */
+}
 
-  .contact {
-    padding: 0 1.5rem;
-    margin-bottom: 5rem;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    border-radius: 1rem;
+/* For print media */
+@media print {
+  body {
   }
-
-  .contact__cont {
-    display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
-    margin: 0;
-    padding: 0;
-  }
-
-  input, textarea, button {
-    padding: 1rem;
-    border-radius: 0.4rem;
-  }
-
-  h3 {
-    font-family: "Roboto", sans-serif;
-    font-weight: 600;
-    font-style: normal;
-    font-size: 1.8rem;
-    letter-spacing: 0.06em;
-    max-width: 450px;
-
-    margin-left: 1.5rem;
-    color: #01B9FF;
-  }
-
-  
-  
-  /* Tablets in portrait mode */
-  @media screen and (max-width: 767px) {
-    html {
-      font-size: 16px;
-    }
-  
-    .hero__container {
-      margin-top: 0;
-      flex-direction: column-reverse;
-    }
-    .hero__leftContainer {
-      padding: 0 2rem;
-      width: 100%;
-    }
-    
-    .hero__rightContainer {
-      width: 100%;
-    }
-  
-    .hero__image {
-        border-radius: 0;
-        max-width: none;
-      }
-  }
-  
-  /* Tablets in landscape mode or small laptops */
-  @media (min-width: 768px) and (max-width: 1024px) {
-    .hero__container {
-      flex-direction: column-reverse;
-    }
-  }
-  
-  /* Small desktops */
-  @media (min-width: 1025px) and (max-width: 1280px) {
-    .hero__container {
-      flex-direction: column-reverse;
-    }
-
-  }
-  
-  /* Large screens, laptops, and desktops */
-  @media (min-width: 1281px) {
-    body {
-      font-size: 24px;
-    }
-    /* Styles for larger screens */
-  }
-  
-  /* For very high resolution screens */
-  @media (min-width: 1920px) {
-    body {
-      font-size: 26px;
-    }
-    /* Styles for very large screens */
-  }
-  
-  /* For print media */
-  @media print {
-    body {
-    }
-    /* Specific styles for print */
-  }
-  
+  /* Specific styles for print */
+}

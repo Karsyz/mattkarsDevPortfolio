@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>mattkars.dev</title>
+    <title>Matt Kars Dev Portfolio</title>
 
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="mattkars.dev" />
+    <meta property="og:title" content="https://mattkars.netlify.app" />
     <meta property="og:url" content="https://karsyz-sandbox.netlify.app/:" />
     <meta
       property="og:image"
@@ -19,7 +19,7 @@
     <meta name="theme-color" content="#FF0000" />
 
     <!-- Google / Search Engine Tags -->
-    <meta itemprop="name" content="mattkars.dev" />
+    <meta itemprop="name" content="https://mattkars.netlify.app" />
     <meta
       itemprop="description"
       content="It's not much, but it's honest work"
@@ -30,7 +30,7 @@
     />
 
     <!-- X / Twitter Tags -->
-    <meta property="twitter:title" content="mattkars.dev" />
+    <meta property="twitter:title" content="https://mattkars.netlify.app" />
     <meta
       property="twitter:description"
       content="It's not much, but it's honest work"
@@ -50,12 +50,13 @@
 
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
     <section class="hero__container">
       <!-- left/bottom container -->
       <div class="hero__leftContainer">
-        <h1 class="hero__title">mattkars.dev</h1>
-        <p class="hero__description">It's not much, but it's honest work</p>
+        <h1 class="hero__title">Matt Kars</h1>
+        <p class="title__description">Software Developer</p>
         <!-- <a class="hero__button" href="#">Let's Play!</a> -->
       </div>
       <!-- right/top image container  -->
@@ -69,6 +70,7 @@
     </section>
 
     <section class="list">
+      <h2 class="title__description bold text-xl">Projects and Work</h2>
       <ul>
         <li>
           <a href="https://steeplepeeps.up.railway.app" target="_blank"
@@ -81,12 +83,12 @@
             imaginenative. It's still a nice little app, and worth checking out
           </p>
         </li>
-        <li>
+        <!-- <li>
           <a href="https://karsyz-sandbox.netlify.app" target="_blank"
             >Karsyz Sandbox</a
           >
           <p>Basic HTML/CSS/JS like this website</p>
-        </li>
+        </li> -->
         <li>
           <a href="https://gilded-baklava-fdcaf1.netlify.app" target="_blank"
             >Space Tourism</a
@@ -173,32 +175,37 @@
       </ul>
     </section>
 
-    <h3 class="">The Obligatory Contact Form</h3>
-    <form
-      class="contact"
-      action="https://formsubmit.co/bc6101181ff42f886d4f36dc9e2bad46"
-      method="POST"
-    >
-      <div class="contact__cont">
-        <label for="email">email</label>
-        <input
-          type="email"
-          name="email"
-          placeholder="your@email.com"
-          required
-        />
+    <section class="contact__wrapper">
+      <div class="">
+        <h3 class="">The Obligatory Contact Form</h3>
+        <form
+          class="contact"
+          action="https://formsubmit.co/bc6101181ff42f886d4f36dc9e2bad46"
+          method="POST"
+        >
+          <div class="contact__cont">
+            <label for="email">email</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="your@email.com"
+              required
+            />
+          </div>
+          <div class="contact__cont">
+            <label for="message">message</label>
+            <textarea
+              name="message"
+              rows="4"
+              placeholder="hey matt, nice website bro! i want to give you a big bag of money to do dev work. hit me up"
+              required
+            ></textarea>
+          </div>
+          <button class="hero__button" type="submit">Send</button>
+        </form>
+
       </div>
-      <div class="contact__cont">
-        <label for="message">message</label>
-        <textarea
-          name="message"
-          rows="4"
-          placeholder="hey matt, nice website bro! i want to give you a big bag of money to do dev work. hit me up"
-          required
-        ></textarea>
-      </div>
-      <button class="hero__button" type="submit">Send</button>
-    </form>
+    </section>
 
     <script src="main.js" type="text/javascript"></script>
   </body>
