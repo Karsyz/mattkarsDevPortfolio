@@ -11,12 +11,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
-  background: linear-gradient(
-  135deg,
-  #b9efffff,
-  #94ffabff,
-  #70f5ffff 
-);
+  background: linear-gradient(135deg, #b9efffff, #94ffabff, #70f5ffff);
 }
 
 a {
@@ -94,20 +89,17 @@ ul {
   line-height: 3rem;
   letter-spacing: 0.035em;
   font-weight: bolder;
-    filter: 
-    drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.2));
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.2));
   margin-left: 2rem;
 }
 
 .bold {
   font-weight: bolder;
-    filter: 
-    drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.2)) 
+  filter: drop-shadow(3px 3px 1px rgba(0, 0, 0, 0.2));
 }
 
 .text-xl {
   font-size: 4rem;
-  
 }
 
 .hero__image {
@@ -206,9 +198,7 @@ h3 {
   font-style: normal;
   font-size: 1.8rem;
   letter-spacing: 0.06em;
-  max-width: 450px;
-
-  margin-left: 1.5rem;
+  text-align: center;
   color: #016fffff;
 }
 
@@ -238,8 +228,11 @@ h3 {
 
   .list__title {
     margin-left: 2rem;
-}
+  }
 
+  .hero__title {
+    line-height: 4rem;
+  }
 }
 
 /* Tablets in landscape mode or small laptops */
